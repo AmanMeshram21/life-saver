@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -49,11 +52,11 @@
                         <div id="myNav" class="overlay">
                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                            <div class="overlay-content">
-                              <a href="index.html">Home</a>
-                              <a href="protect.html">Donor From</a>
-                              <a href="about.html">About</a>
-                              <a href="hospital.html">Hospital</a>
-                              <a href="news.html">News</a>
+                              <a href="/">Home</a>
+                              <a href="/donor">Donor</a>
+                              <a href="/about">About</a>
+                              <a href="/hospital">Hospital</a>
+                              <a href="/news">News</a>
                            </div>
                         </div>
                         <span class="navbar-toggler-icon"></span>
@@ -70,7 +73,7 @@
                   <div class="about_menu">
                      <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li>About</li>
+                        
                      </ul>
                   </div>
                </div>
@@ -88,7 +91,49 @@
                <div class="col-md-6">
                   <h1 class="about_taital">what is blood donation?</span></h1>
                   <p class="about_text">A blood donation occurs when a person voluntarily has blood drawn and used for transfusions and/or made into biopharmaceutical medications by a process called fractionation (separation of whole blood components). Donation may be of whole blood, or of specific components directly (apheresis). Blood banks often participate in the collection process as well as the procedures that follow it.</p>
-                  <div class="read_bt"><a href="#">Read More</a></div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div><img src="images/bloodD.png" height="400%" width="400%"></div>
+               </div>
+               <div class="col-md-6">
+                  <h1 class="about_taital">Know everything about
+                     blood donation</span></h1>
+                  <p class="about_text">Blood donation is not just a sacred service to patients in dire need of blood but also brings health benefits to the donor. From your emotional well-being to lowering your cholesterol levels, blood donation does it all. For every donation, about three lives get saved and cured of many diseases. Your blood donation can be used whole, for platelets,
+                      red blood cells, plasma, etc. Sometimes you can use your donated blood for your own elective surgery..</p>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div><img src="images/blood_donation.jpg" height="700%" width="500%"></div>
+               </div>
+               <div class="col-md-6">
+                  <h1 class="about_taital">Benifits of Blood donation</span></h1>
+                  <p class="about_text">Every moment some accident happens and the victimâs family goes on the lookout for the matching blood type.
+                                          
+                     Here are some of the many benefits of blood donation:
+                  Helps you get a check-up on your body parameters.                    
+                     Releases toxins or chemicals from your body.                   
+                    Reduces iron overload in the body.                
+                    Reduces risk of diseases like anaemia, cancer, etc.                     
+                    Helps in weight loss.
+                    Protects you from cardiovascular diseases.
+                  
+                  </p>
+                  
                </div>
             </div>
          </div>
@@ -103,18 +148,20 @@
                      <h2 class="useful_text">Resources</h2>
                      <div class="footer_menu">
                         <ul>
-                           <li><a href="#">What we do</a></li>
-                           <li><a href="#">Media</a></li>
-                           <li><a href="#">Travel Advice</a></li>
-                           <li><a href="#">Protection</a></li>
-                           <li><a href="#">Care</a></li>
+                           <li><a href="http://nbtc.naco.gov.in/page/donationprocess/">Donation process</a></li>
+                           <li><a href="https://www.youtube.com/watch?v=p5EBrAbVs04">Media</a></li>
+                           <li><a href="https://www.who.int/news-room/fact-sheets/detail/blood-safety-and-availability#:~:text=WHO%20recommends%20that%20all%20blood,according%20to%20quality%20system%20requirements.">Protection</a></li>
+                           <li><a href="https://www.redcrossblood.org/donate-blood/blood-donation-process/before-during-after.html">Care</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                      <h2 class="useful_text">About</h2>
-                     <p class="footer_text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
-                  </div>
+                     <p class="footer_text">Blood donation is not just a sacred service to patients in dire need of blood but
+                         also brings health benefits to the donor. 
+                         Your blood donation can be used whole, for platelets, 
+                         red blood cells, plasma, etc. </div>
+
                   <div class="col-lg-3 col-sm-6">
                      <h2 class="useful_text">Contact Us</h2>
                      <div class="location_text">
@@ -148,7 +195,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <p class="copyright_text">© 2020 All Rights Reserved.<a href="https://html.design"> Life Saver</a></p>
+                  <p class="copyright_text">Â© 2020 All Rights Reserved.<a href="https://html.design"> Life Saver</a></p>
                </div>
             </div>
          </div>
@@ -191,4 +238,4 @@
          }
       </script>  
    </body>
-</html>
+   </html>

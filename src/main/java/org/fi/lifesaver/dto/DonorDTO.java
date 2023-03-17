@@ -6,7 +6,11 @@ public class DonorDTO {
 	
 	String donorName;
 	
-	String dob;
+	String fatherName;
+	
+	String lastName;
+	
+	int age;
 	
 	String address;
 	
@@ -15,6 +19,62 @@ public class DonorDTO {
 	String email;
 	
 	String bloodGroup;
+	
+	String district;
+	
+	String state;
+	
+	String password;
+	
+	
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getFatherName() {
+		return fatherName;
+	}
+
+	public void setFatherName(String fatherName) {
+		this.fatherName = fatherName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public int getDonorId() {
 		return donorId;
@@ -32,13 +92,6 @@ public class DonorDTO {
 		this.donorName = donorName;
 	}
 
-	public String getDob() {
-		return dob;
-	}
-
-	public void setDob(String dob) {
-		this.dob = dob;
-	}
 
 	public String getAddress() {
 		return address;

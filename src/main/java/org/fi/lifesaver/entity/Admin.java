@@ -4,6 +4,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
@@ -11,27 +13,36 @@ import javax.persistence.Table;
 public class Admin {
 
 	@Id
-    @Column(name = "adminid")
-    @GeneratedValue(generator="increment")
-    int adminId;
+	@Column(name="adminid")
+	@GeneratedValue(generator = "increment")
+	int  adminId;
+
+	@Column(name = "username")
+    String userName;
     @Column(name = "firstname")
     String firstName;
     @Column(name = "lastname")
     String lastName;
     @Column(name = "password")
     String password;
-    @Column(name = "mobilenumber")
-    String mobileNumber;
-    @Column(name = "age")
-    int age;
+    @Column(name = "email")
+    String email;
 
     public int getAdminId() {
-        return adminId;
-    }
+		return adminId;
+	}
 
-    public void setAdminId(int adminId) {
-        this.adminId = adminId;
-    }
+	public void setAdminId(int adminId) {
+		this.adminId = adminId;
+	}
+    
+    public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 
     public String getFirstName() {
         return firstName;
@@ -57,19 +68,14 @@ public class Admin {
         this.password = password;
     }
 
-    public String getMobileNumber() {
-        return mobileNumber;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setMobileNumber(String mobileNumber) {
-        this.mobileNumber = mobileNumber;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public int getAge() {
-        return age;
-    }
+ 
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 }

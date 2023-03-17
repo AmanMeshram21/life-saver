@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -9,7 +12,7 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+<div class="logo"><a href="/"><img src="images/logo.png"></a></div>
 <nav class="main-nav">
 	<ul>
 		<li><a class="signin" href="#0">Sign in</a></li>
@@ -25,16 +28,16 @@
 			</ul>
 
 			<div id="login">
-				<form class="form">
+				<form class="form" action="/signIn">
 					<p class="fieldset">
 						<label class="image-replace email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<input class="full-width has-padding has-border" id="signin-email" name="email" type="email" placeholder="E-mail">
 						<span class="error-message">An account with this email address does not exist!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+						<input class="full-width has-padding has-border" id="signin-password" name="password" type="password"  placeholder="Password">
 						<a href="#0" class="hide-password">Show</a>
 						<span class="error-message">Wrong password! Try again.</span>
 					</p>
@@ -54,22 +57,32 @@
 			</div>
 
 			<div id="signup">
-				<form class="form">
+				<form class="form" action="/saveAdmin" method="post">
+					<p class="fieldset">
+						<label class="image-replace username" for="signup-username">Firstname</label>
+						<input class="full-width has-padding has-border" id="signup-username" name="firstName" type="text" placeholder="Firstname">
+						<span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
+					</p>
+					<p class="fieldset">
+						<label class="image-replace username" for="signup-username">Lastname</label>
+						<input class="full-width has-padding has-border" id="signup-username" name="lastName" type="text" placeholder="Lastname">
+						<span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
+					</p>
 					<p class="fieldset">
 						<label class="image-replace username" for="signup-username">Username</label>
-						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+						<input class="full-width has-padding has-border" id="signup-username" name="username" type="text" placeholder="Username">
 						<span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace email" for="signup-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+						<input class="full-width has-padding has-border" id="signup-email" name="email" type="text" placeholder="E-mail">
 						<span class="error-message">Enter a valid email address!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace password" for="signup-password">Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+						<input class="full-width has-padding has-border" id="signup-password" name="password" type="password"  placeholder="Password">
 						<a href="#0" class="hide-password">Show</a>
 						<span class="error-message">Your password has to be at least 6 characters long!</span>
 					</p>
@@ -78,9 +91,10 @@
 						<input type="checkbox" id="accept-terms">
 						<label for="accept-terms">I agree to the <a class="accept-terms" href="#0">Terms</a></label>
 					</p>
+					<p>
 
 					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Create account">
+						<button class="full-width has-padding" type="submit" value="Create account">submit</button> 
 					</p>
 				</form>
 
@@ -98,7 +112,8 @@
 					</p>
 
 					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Reset password">
+		
+					<a href="donor.jsp">	<input class="full-width has-padding" type="submit" value="Reset password"></a>
 					</p>
 				</form>
 

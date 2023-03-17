@@ -10,7 +10,29 @@ public class HospitalDTO {
 	
 	String email;
 	
-	int contactNo;
+	long contactNo;
+	
+	String district;
+	
+	String state;
+	
+	
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
 
 	public int getHospitalId() {
 		return hospitalId;
@@ -44,11 +66,11 @@ public class HospitalDTO {
 		this.email = email;
 	}
 
-	public int getContactNo() {
+	public long getContactNo() {
 		return contactNo;
 	}
 
-	public void setContactNo(int contactNo) {
+	public void setContactNo(long contactNo) {
 		this.contactNo = contactNo;
 	}
 	

@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Doctors</title>
+    <title>Hospital</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -43,14 +46,14 @@
       <div class="container-fluid">
         <div class="main">
           <div class="logo">
-            <a href="index.html"><img src="images/logo.png" /></a>
+            <a href="/"><img src="images/logo.png" /></a>
           </div>
           <div class="menu_text">
             <ul>
               <div class="togle_">
                 <div class="menu_main">
                   <ul>
-                    <li><a href="login.html">Login/SignUp</a></li>
+                    <li><a href="/login">Login/SignUp</a></li>
                     <li>
                       <a href="#"
                         ><i class="fa fa-search" aria-hidden="true"></i
@@ -67,11 +70,11 @@
                   >&times;</a
                 >
                 <div class="overlay-content">
-                  <a href="index.html">Home</a>
-                  <a href="donor.html">Donor Form</a>
-                  <a href="about.html">About</a>
-                  <a href="hospital.html">Hospital</a>
-                  <a href="news.html">News</a>
+                  <a href="/">Home</a>
+                  <a href="/donor">Donor Form</a>
+                  <a href="/about">About</a>
+                  <a href="/hospital">Hospital</a>
+                  <a href="/news">News</a>
                 </div>
               </div>
               <span class="navbar-toggler-icon"></span>
@@ -91,8 +94,8 @@
           <h2 class="about_tag">Hospitals and Blood Bank</h2>
           <div class="about_menu">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li>Doctors</li>
+              <li><a href="/">Home</a></li>
+              
             </ul>
           </div>
         </div>
@@ -110,13 +113,13 @@
                 <div class="play_icon"><img src="images/play-icon.png" /></div>
               </div>
               <div class="taital_right">
-                <h1 class="doctor_taital">What doctors say..</h1>
+                <h1 class="doctor_taital" style="color: black;">What doctors say..</h1>
                 <p class="doctor_text" style="color: black">
-                  <b
-                    >Blood transfusion saves lives and improves health, but many
+                  <b>
+                    Blood transfusion saves lives and improves health, but many
                     patients requiring transfusion do not have timely access to
                     safe blood. Providing safe and adequate blood should be an
-                    integral part of every country’s national health care policy
+                    integral part of every countryâs national health care policy
                     and infrastructure. WHO recommends that all activities
                     related to blood collection, testing, processing, storage
                     and distribution be coordinated at the national level
@@ -127,7 +130,6 @@
                     quality and safety of blood and blood products.
                   </b>
                 </p>
-                <div class="readmore_bt"><a href="#">Read More</a></div>
               </div>
             </div>
           </div>
@@ -144,12 +146,11 @@
             <div class="col-md-6">
                <h1 class="about_taital">what is blood donation?</span></h1>
                <p class="about_text">A blood donation occurs when a person voluntarily has blood drawn and used for transfusions and/or made into biopharmaceutical medications by a process called fractionation (separation of whole blood components). Donation may be of whole blood, or of specific components directly (apheresis). Blood banks often participate in the collection process as well as the procedures that follow it.</p>
-               <div class="read_bt"><a href="#">Read More</a></div>
             </div>
          </div>
          <form action="/action_page.php">
           <div class="subscribe_bt">
-            <a href="donorform.html">Hospital/Bank Form</a>
+            <a href="/hospitalform">Hospital/Bank Form</a>
           </div>
         </form>
       </div>
@@ -163,21 +164,19 @@
               <h2 class="useful_text">Resources</h2>
               <div class="footer_menu">
                 <ul>
-                  <li><a href="#">What we do</a></li>
-                  <li><a href="#">Media</a></li>
-                  <li><a href="#">Travel Advice</a></li>
-                  <li><a href="#">Protection</a></li>
-                  <li><a href="#">Care</a></li>
-                </ul>
-              </div>
+                  <li><a href="http://nbtc.naco.gov.in/page/donationprocess/">Donation process</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=p5EBrAbVs04">Media</a></li>
+                  <li><a href="https://www.who.int/news-room/fact-sheets/detail/blood-safety-and-availability#:~:text=WHO%20recommends%20that%20all%20blood,according%20to%20quality%20system%20requirements.">Protection</a></li>
+                  <li><a href="https://www.redcrossblood.org/donate-blood/blood-donation-process/before-during-after.html">Care</a></li>
+               </ul>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <h2 class="useful_text">About</h2>
-              <p class="footer_text">
-                Many desktop publishing packages and web page editors now use
-                Lorem Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various
+         </div>
+         <div class="col-lg-3 col-sm-6">
+            <h2 class="useful_text">About</h2>
+            <p class="footer_text">Blood donation is not just a sacred service to patients in dire need of blood but
+                also brings health benefits to the donor. 
+                Your blood donation can be used whole, for platelets, 
+                red blood cells, plasma, etc.
               </p>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -220,7 +219,7 @@
         <div class="row">
           <div class="col-sm-12">
             <p class="copyright_text">
-              © 2020 All Rights Reserved.<a href="https://html.design">
+              Â© 2020 All Rights Reserved.<a href="https://html.design">
                 Life Saver</a
               >
             </p>

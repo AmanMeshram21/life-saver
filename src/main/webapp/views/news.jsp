@@ -1,5 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -35,13 +38,13 @@
       <div class="header_section header_bg">
          <div class="container-fluid">
                <div class="main">
-                  <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+                  <div class="logo"><a href="/"><img src="images/logo.png"></a></div>
                   <div class="menu_text">
                      <ul>
                         <div class="togle_">
                            <div class="menu_main">
                               <ul>
-                                 <li><a href="#">Login</a></li>
+                                 <li><a href="/login">Login/SignUp</a></li>
                                  <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                               </ul>
                            </div>
@@ -49,11 +52,11 @@
                         <div id="myNav" class="overlay">
                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                            <div class="overlay-content">
-                              <a href="index.html">Home</a>
-                              <a href="protect.html">Protect</a>
-                              <a href="about.html">About</a>
-                              <a href="doctors.html">Doctors</a>
-                              <a href="news.html">News</a>
+                              <a href="/">Home</a>
+                              <a href="/donor">Donor</a>
+                              <a href="/about">About</a>
+                              <a href="/hospital">Hospital</a>
+                              <a href="/newsS">News</a>
                            </div>
                         </div>
                         <span class="navbar-toggler-icon"></span>
@@ -66,11 +69,11 @@
             <!-- banner section start -->
             <div class="container">
                <div class="about_taital_main">
-                  <h2 class="about_tag">News Corona Virus</h2>
+                  <h2 class="about_tag">Blood Donation News</h2>
                   <div class="about_menu">
                      <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>News</li>
+                        <li><a href="/">Home</a></li>
+                     
                      </ul>
                   </div>
                </div>
@@ -85,37 +88,46 @@
                <div class="carousel-inner">
                   <div class="carousel-item active">
                      <h1 class="news_taital">Latest News</h1>
-                     <p class="news_text">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+                     <p class="news_text">Some of the latest news about Blood donation</p>
                      <div class="news_section_2 layout_padding">
                         <div class="box_main">
                            <div class="image_1"><img src="images/news-img.png"></div>
                            <h2 class="design_text">Coronavirus is Very dangerous</h2>
                            <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
+                           <div class="read_btn"><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265171">Read More</a></div>
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
                     <h1 class="news_taital">Latest News</h1>
-                     <p class="news_text">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+                     <p class="news_text">Some of the latest news about Blood donation</p>
                      <div class="news_section_2 layout_padding">
                         <div class="box_main">
                            <div class="image_1"><img src="images/news-img.png"></div>
-                           <h2 class="design_text">Coronavirus is Very dangerous</h2>
-                           <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
+                           <h2 class="design_text">15-day 'Raktdaan Amrit Mahotsav' begins on PM Narendra Modi's birthday, Health Minister Mandaviya donates blood</h2>
+
+                             <p class="lorem_text">Union Health Minister Mansukh Mandaviya on Saturday launched a 15-day blood donation drive on the occasion of Prime Minister Narendra Modi's birthday.
+
+                              Mandaviya also donated blood at a camp set up at Safdarjung Hospital.</p>
+                              
+                              <div class="read_btn"><a href="https://economictimes.indiatimes.com/news/india/15-day-raktdaan-amrit-mahotsav-begins-on-pm-narendra-modis-birthday-health-minister-mandaviya-donates-blood/articleshow/94261372.cms">Read More</a></div>
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
                     <h1 class="news_taital">Latest News</h1>
-                     <p class="news_text">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+                     <p class="news_text">Some of the latest news about Blood donation</p>
                      <div class="news_section_2 layout_padding">
                         <div class="box_main">
                            <div class="image_1"><img src="images/news-img.png"></div>
-                           <h2 class="design_text">Coronavirus is Very dangerous</h2>
-                           <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
+                           <h2 class="design_text">Delhi govt to organise blood donation camps on Bhagat Singh's birth anniversary</h2>
+
+                            <p class="lorem_text">Delhi Chief Minister Arvind Kejriwal on Thursday urged people
+                               across the country to donate blood on the occasion of the birth anniversary of freedom 
+                               fighter Bhagat Singh on September 28. He said the Delhi government will organise blood donation camps 
+                               at more than 50 places in the national capital.</p>
+
+                             <div class="read_btn"><a href="https://economictimes.indiatimes.com/news/india/delhi-govt-to-organise-blood-donation-camps-on-bhagat-singhs-birth-anniversary/articleshow/94220209.cms">Read More</a></div>
                         </div>
                      </div>      
                   </div>
@@ -140,18 +152,19 @@
                      <h2 class="useful_text">Resources</h2>
                      <div class="footer_menu">
                         <ul>
-                           <li><a href="#">What we do</a></li>
-                           <li><a href="#">Media</a></li>
-                           <li><a href="#">Travel Advice</a></li>
-                           <li><a href="#">Protection</a></li>
-                           <li><a href="#">Care</a></li>
+                           <li><a href="http://nbtc.naco.gov.in/page/donationprocess/">Donation process</a></li>
+                           <li><a href="https://www.youtube.com/watch?v=p5EBrAbVs04">Media</a></li>
+                           <li><a href="https://www.who.int/news-room/fact-sheets/detail/blood-safety-and-availability#:~:text=WHO%20recommends%20that%20all%20blood,according%20to%20quality%20system%20requirements.">Protection</a></li>
+                           <li><a href="https://www.redcrossblood.org/donate-blood/blood-donation-process/before-during-after.html">Care</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                      <h2 class="useful_text">About</h2>
-                     <p class="footer_text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
-                  </div>
+                     <p class="footer_text">Blood donation is not just a sacred service to patients in dire need of blood but
+                         also brings health benefits to the donor. 
+                         Your blood donation can be used whole, for platelets, 
+                         red blood cells, plasma, etc.</p></div>
                   <div class="col-lg-3 col-sm-6">
                      <h2 class="useful_text">Contact Us</h2>
                      <div class="location_text">
@@ -185,7 +198,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <p class="copyright_text">© 2020 All Rights Reserved.<a href="https://html.design"> Free  html Templates</a></p>
+                  <p class="copyright_text">Â© 2020 All Rights Reserved.<a href="https://html.design"> Free  html Templates</a></p>
                </div>
             </div>
          </div>

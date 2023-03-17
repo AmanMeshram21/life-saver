@@ -7,4 +7,6 @@ public interface AdminService {
 
 	public boolean adminLogin(@PathVariable("adminId")int adminId,@PathVariable("password")String password);
 	public AdminDTO getAdminById(int adminId);
+	public String  addAdmin(AdminDTO objAdmin);
+	public boolean adminLoginByEmailId(String email, String password);
 }

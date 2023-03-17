@@ -25,7 +25,31 @@ public class Hospital {
 	String email;
 	
 	@Column(name="contactno")
-	int contactNo;
+	long contactNo;
+	
+	@Column(name="district")
+	String district;
+	
+	@Column(name="state")
+	String state;
+	
+	
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
 
 	public int getHospitalId() {
 		return hospitalId;
@@ -59,11 +83,11 @@ public class Hospital {
 		this.email = email;
 	}
 
-	public int getContactNo() {
+	public long getContactNo() {
 		return contactNo;
 	}
 
-	public void setContactNo(int contactNo) {
+	public void setContactNo(long contactNo) {
 		this.contactNo = contactNo;
 	}
 	

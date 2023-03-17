@@ -3,12 +3,14 @@ package org.fi.lifesaver.dto;
 public class AdminDTO {
 
 	int adminId;
+	String userName;
     String firstName;
     String lastName;
     String password;
-    String mobileNumber;
-    int age;
+    String email;
     
+    
+	
 	public int getAdminId() {
 		return adminId;
 	}
@@ -33,18 +35,19 @@ public class AdminDTO {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getMobileNumber() {
-		return mobileNumber;
+	public String getUserName() {
+		return userName;
 	}
-	public void setMobileNumber(String mobileNumber) {
-		this.mobileNumber = mobileNumber;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	public int getAge() {
-		return age;
+	public String getEmail() {
+		return email;
 	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setEmail(String email) {
+		this.email = email;
 	}
+
     
     
 }

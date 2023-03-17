@@ -1,5 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -9,7 +12,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Convid</title>
+      <title>Lifesaver</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -35,13 +38,13 @@
       <div class="header_section">
          <div class="container-fluid">
                <div class="main">
-                  <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+                  <div class="logo"><a href="/"><img src="images/logo.png"></a></div>
                   <div class="menu_text">
                      <ul>
                         <div class="togle_">
                            <div class="menu_main">
                               <ul>
-                                 <li><a href="login.html">Login/SignUp</a></li>
+                                 <li><a href="/login">Login/SignUp</a></li>
                                  <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                               </ul>
                            </div>
@@ -49,11 +52,11 @@
                         <div id="myNav" class="overlay">
                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                            <div class="overlay-content">
-                              <a href="index.html">Home</a>
-                              <a href="donor.html">Donor Form</a>
-                              <a href="about.html">About</a>
-                              <a href="hospital.html">Hospital</a>
-                              <a href="news.html">News</a>
+                              <a href="/">Home</a>
+                              <a href="/donor">Donor Form</a>
+                              <a href="/about">About</a>
+                              <a href="/hospital">Hospital</a>
+                              <a href="/news">News</a>
                            </div>
                         </div>
                         <span class="navbar-toggler-icon"></span>
@@ -74,7 +77,7 @@
                            <div class="container">
                               <h1 class="banner_taital">Donate Blood</h1>
                               <p class="banner_text">A blood donation occurs when a person voluntarily has blood drawn and used for transfusions and/or made into biopharmaceutical medications by a process called fractionation (separation of whole blood components). </p>
-                              <div class="more_bt"><a href="#">Read More</a></div>
+                              
                            </div>
                         </div>
                         <div class="col-md-6">
@@ -88,7 +91,6 @@
                            <div class="container">
                               <h1 class="banner_taital">Blood Group</h1>
                               <p class="banner_text">There are 4 main blood groups (types of blood) A, B, AB and O. Your blood group is determined by the genes you inherit from your parents. Each group can be either RhD positive or RhD negative, which means in total there are 8 blood groups.</p>
-                              <div class="more_bt"><a href="#">Read More</a></div>
                            </div>
                         </div>
                         <div class="col-md-6">
@@ -101,8 +103,7 @@
                         <div class="col-md-6">
                            <div class="container">
                               <h1 class="banner_taital">Benefit of Blood Donation</h1>
-                              <p class="banner_text">The history of blood donation dates back to 1942 when India’s first blood bank was set up in Kolkata and managed by Red Cross. Since then, number of voluntary donors has kept on increasing. In 2020, around 12.7units of blood were donated in India.</p>
-                              <div class="more_bt"><a href="#">Read More</a></div>
+                              <p class="banner_text">The history of blood donation dates back to 1942 when Indiaâs first blood bank was set up in Kolkata and managed by Red Cross. Since then, number of voluntary donors has kept on increasing. In 2020, around 12.7units of blood were donated in India.</p>
                            </div>
                         </div>
                         <div class="col-md-6">
@@ -134,7 +135,7 @@
               common ones include: Donating is a generous thing to do. It helps
               people in need, and it helps people in your community. When you
               give, others live. Donors, especially those who donate regularly,
-              keep our nation’s blood supply stable. Although many people donate
+              keep our nationâs blood supply stable. Although many people donate
               blood after disasters, blood is needed every day of the year.
               There is no substitute for blood. Donors provide the only supply
               of life-saving blood for those in need. Donating is simple, fast,
@@ -217,9 +218,12 @@
                   <div class="about_img"><img src="images/img-1.png"></div>
                </div>
                <div class="col-md-6">
-                  <h1 class="about_taital">what is blood donation?</span></h1>
-                  <p class="about_text">A blood donation occurs when a person voluntarily has blood drawn and used for transfusions and/or made into biopharmaceutical medications by a process called fractionation (separation of whole blood components). Donation may be of whole blood, or of specific components directly (apheresis). Blood banks often participate in the collection process as well as the procedures that follow it.</p>
-                  <div class="read_bt"><a href="#">Read More</a></div>
+                  <h1 class="about_taital">what is blood donation?</h1>
+                  <p class="about_text">A blood donation occurs when a person voluntarily has blood drawn and used
+                     for transfusions and/or made into biopharmaceutical medications by a process 
+                     called fractionation (separation of whole blood components).
+                      Donation may be of whole blood, or of specific components directly (apheresis).
+                       Blood banks often participate in the collection process as well as the procedures that follow it.</p>
                </div>
             </div>
          </div>
@@ -235,10 +239,9 @@
                         <div class="play_icon"><img src="images/play-icon.png"></div>
                      </div>
                      <div class="taital_right">
-                        <h1 class="doctor_taital">What doctors say..</h1>
-                        <p class="doctor_text" style="color: black;"><b>Blood transfusion saves lives and improves health, but many patients requiring transfusion do not have timely access to safe blood. Providing safe and adequate blood should be an integral part of every country’s national health care policy and infrastructure.
+                        <h1 class="doctor_taital" style="color: black;"><b>What doctors say..</b></h1>
+                        <p class="doctor_text" style="color: black;"><b>Blood transfusion saves lives and improves health, but many patients requiring transfusion do not have timely access to safe blood. Providing safe and adequate blood should be an integral part of every countryâs national health care policy and infrastructure.
                            WHO recommends that all activities related to blood collection, testing, processing, storage and distribution be coordinated at the national level through effective organization and integrated blood supply networks. The national blood system should be governed by national blood policy and legislative framework to promote uniform implementation of standards and consistency in the quality and safety of blood and blood products. </b></p>
-                        <div class="readmore_bt"><a href="#">Read More</a></div>
                      </div>
                   </div>
                </div>
@@ -259,7 +262,6 @@
                            <div class="image_1"><img src="images/news-img.png"></div>
                            <h2 class="design_text">Blood Donation is Recommended</h2>
                            <p class="lorem_text">The regulatory framework for blood donation and blood bank management rests with the Central Drugs Standard Control Organisation, while technical bodies like the National Blood Transfusion Council and National AIDS Control Organisation formulate guidelines and recommendations for transfusion medicine and blood bank management. Challenges persist with regards to regulation of blood banks and transfusion practices as the sector is largely fragmented with uneven distribution of blood banks and supply of blood in parts of the country.</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
                         </div>
                      </div>
                   </div>
@@ -268,10 +270,13 @@
                      <p class="news_text">Blood donations in India are conducted by organisations and hospitals through blood donation camps. Donors can also visit blood banks in hospitals to donate blood. Efforts by the government and advocacy groups over the years have helped bridge the gap between demand and supply. </p>
                      <div class="news_section_2 layout_padding">
                         <div class="box_main">
-                           <div class="image_1"><img src="images/news-img.png"></div>
-                           <h2 class="design_text">Blood Donation is Recommended</h2>
-                           <p class="lorem_text">The regulatory framework for blood donation and blood bank management rests with the Central Drugs Standard Control Organisation, while technical bodies like the National Blood Transfusion Council and National AIDS Control Organisation formulate guidelines and recommendations for transfusion medicine and blood bank management. Challenges persist with regards to regulation of blood banks and transfusion practices as the sector is largely fragmented with uneven distribution of blood banks and supply of blood in parts of the country.</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
+                           <div class="image_1"><img src="images/blooddonation.jpg"></div>
+                           <h2 class="design_text">Eat And Avoid These Foods Before Donating Blood</h2>
+                           <p class="lorem_text"> Along with iron rich food items, one should also take care of the vitamin C intake in daily diet.
+                               Your plate will be complete if you include Vitamin C rich foods such as oranges, pineapple, lemon, capsicum, green leafy vegetables, tomato and kiwi. Vitamin C plays an vital role in the absorption of iron in the body.
+                               So, it is also essential to consume foods that have good amount of vitamin C before donating blood. 
+                               Along with drinking water, it is important to increase the intake of homemade fresh fruit or vegetable juices, 
+                               especially before 48 hours of blood donation. </p>
                         </div>
                      </div>
                   </div>
@@ -280,11 +285,15 @@
                      <p class="news_text">Blood donations in India are conducted by organisations and hospitals through blood donation camps. Donors can also visit blood banks in hospitals to donate blood. Efforts by the government and advocacy groups over the years have helped bridge the gap between demand and supply.</p>
                      <div class="news_section_2 layout_padding">
                         <div class="box_main">
-                           <div class="image_1"><img src="images/news-img.png"></div>
-                           <h2 class="design_text">Blood Donation is Recommended</h2>
-                           <p class="lorem_text">The regulatory framework for blood donation and blood bank management rests with the Central Drugs Standard Control Organisation, while technical bodies like the National Blood Transfusion Council and National AIDS Control Organisation formulate guidelines and recommendations for transfusion medicine and blood bank management. Challenges persist with regards to regulation of blood banks and transfusion practices as the sector is largely fragmented with uneven distribution of blood banks and supply of blood in parts of the country.</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
-                        </div>
+                           <div class="image_1"><img src="images/Bdonation.png"></div>
+                           <h2 class="design_text">Centre preps for nation-wide blood donation drive to celebrate Prime Minister's birthday</h2>
+
+                              <p class="lorem_text">A massive nationwide blood donation drive will be launched by the health ministry on PM Narendra Modi's birthday on September 17 to encourage people to donate blood.
+
+                                 This will address the gap between demand and supply of blood in the country, an official said. Ministry officials said the government is also ramping efforts to ensure each of the nine lakh TB patients who have consented to be cared for by a donor is adopted before October 2.
+                                 
+                                 Read more at:
+                                 https://economictimes.indiatimes.com/news/india/centre-preps-for-nation-wide-blood-donation-drive-to-celebrate-prime-ministers-birthday/articleshow/94164231.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst     </div>
                      </div>      
                   </div>
                </div>
@@ -298,20 +307,7 @@
             </div>
          </div>
       </div>
-      <!-- news section end -->
-      <!-- update section start -->
-      <div class="update_section">
-         <div class="container">
-            <h1 class="update_taital">Get Every Update.... </h1>
-            <form action="/action_page.php">
-               <div class="form-group">
-                   <textarea class="update_mail" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-               </div>
-               <div class="subscribe_bt"><a href="#">Subscribe Now</a></div>
-            </form>
-         </div>
-      </div>
-      <!-- update section end -->
+      
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
@@ -321,18 +317,22 @@
                      <h2 class="useful_text">Resources</h2>
                      <div class="footer_menu">
                         <ul>
-                           <li><a href="#">What we do</a></li>
-                           <li><a href="#">Media</a></li>
-                           <li><a href="#">Travel Advice</a></li>
-                           <li><a href="#">Protection</a></li>
-                           <li><a href="#">Care</a></li>
+                           <li><a href="http://nbtc.naco.gov.in/page/donationprocess/">Donation process</a></li>
+                           <li><a href="https://www.youtube.com/watch?v=p5EBrAbVs04">Media</a></li>
+                           <li><a href="https://www.who.int/news-room/fact-sheets/detail/blood-safety-and-availability#:~:text=WHO%20recommends%20that%20all%20blood,according%20to%20quality%20system%20requirements.">Protection</a></li>
+                           <li><a href="https://www.redcrossblood.org/donate-blood/blood-donation-process/before-during-after.html">Care</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                      <h2 class="useful_text">About</h2>
-                     <p class="footer_text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
-                  </div>
+                     <p class="footer_text">Blood donation is not just a sacred service to patients in dire need of blood but
+                         also brings health benefits to the donor. 
+                         Your blood donation can be used whole, for platelets, 
+                         red blood cells, plasma, etc.
+
+                        
+                     </div>
                   <div class="col-lg-3 col-sm-6">
                      <h2 class="useful_text">Contact Us</h2>
                      <div class="location_text">
@@ -366,7 +366,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <p class="copyright_text">© 2020 All Rights Reserved.<a href="https://html.design">Life Saver</a></p>
+                  <p class="copyright_text">Â© 2020 All Rights Reserved.<a href="https://html.design">Life Saver</a></p>
                </div>
             </div>
          </div>

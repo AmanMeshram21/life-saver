@@ -11,15 +11,20 @@ import javax.persistence.Table;
 public class Donor {
 	
 	@Id
-	@GeneratedValue(generator="increment")
 	@Column(name="donorid")
     int donorId;
 	
 	@Column(name="donorname")
 	String donorName;
 	
-	@Column(name="dob")
-	String dob;
+	@Column(name="fathername")
+	String fatherName;
+	
+	@Column(name="lastname")
+	String lastName;
+	
+	@Column(name="age")
+	int age;
 	
 	@Column(name="address")
 	String address;
@@ -32,6 +37,64 @@ public class Donor {
 	
 	@Column(name="bloodgroup")
 	String bloodGroup;
+	
+	@Column(name="district")
+	String district;
+	
+	@Column(name="state")
+	String state;
+	
+	@Column(name="password")
+	String password;
+
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getFatherName() {
+		return fatherName;
+	}
+
+	public void setFatherName(String fatherName) {
+		this.fatherName = fatherName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public int getDonorId() {
 		return donorId;
@@ -47,14 +110,6 @@ public class Donor {
 
 	public void setDonorName(String donorName) {
 		this.donorName = donorName;
-	}
-
-	public String getDob() {
-		return dob;
-	}
-
-	public void setDob(String dob) {
-		this.dob = dob;
 	}
 
 	public String getAddress() {

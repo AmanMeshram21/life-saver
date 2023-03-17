@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = {"org.fi.lifesaver.controllers","org.fi.lifesaver.services"})
+@SpringBootApplication(scanBasePackages = {"org.fi.lifesaver.controller","org.fi.lifesaver.services"})
 @EntityScan(basePackages = {"org.fi.lifesaver.entity"})
 @EnableJpaRepositories(basePackages = {"org.fi.lifesaver.repositories"})
 public class LifesaverApplication {

@@ -1,5 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <!-- basic -->
     <meta charset="utf-8" />
@@ -43,14 +46,14 @@
       <div class="container-fluid">
         <div class="main">
           <div class="logo">
-            <a href="index.html"><img src="images/logo.png" /></a>
+            <a href="/"><img src="images/logo.png" /></a>
           </div>
           <div class="menu_text">
             <ul>
               <div class="togle_">
                 <div class="menu_main">
                   <ul>
-                    <li><a href="login.html">Login/SignUp</a></li>
+                    <li><a href="/login">Login/SignUp</a></li>
                     <li>
                       <a href="#"
                         ><i class="fa fa-search" aria-hidden="true"></i
@@ -67,11 +70,11 @@
                   >&times;</a
                 >
                 <div class="overlay-content">
-                  <a href="index.html">Home</a>
-                  <a href="donor.html">Donor From</a>
-                  <a href="about.html">About</a>
-                  <a href="hospital.html">Hospital</a>
-                  <a href="news.html">News</a>
+                  <a href="/">Home</a>
+                  <a href="/donor">Donor From</a>
+                  <a href="/about">About</a>
+                  <a href="/hospital">Hospital</a>
+                  <a href="/news">News</a>
                 </div>
               </div>
               <span class="navbar-toggler-icon"></span>
@@ -91,8 +94,10 @@
           <h2 class="about_tag">Donate Blood</h2>
           <div class="about_menu">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li>Donate Blood</li>
+              <li><a href="/">Home</a></li>
+              <li>
+                <a href="/donorform"> &nbsp;&nbsp;&nbsp;&nbsp;Donor form</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -111,7 +116,7 @@
               common ones include: Donating is a generous thing to do. It helps
               people in need, and it helps people in your community. When you
               give, others live. Donors, especially those who donate regularly,
-              keep our nation’s blood supply stable. Although many people donate
+              keep our nationâs blood supply stable. Although many people donate
               blood after disasters, blood is needed every day of the year.
               There is no substitute for blood. Donors provide the only supply
               of life-saving blood for those in need. Donating is simple, fast,
@@ -137,7 +142,7 @@
               their bodies. Platelets are most often used to treat cancer. They
               are also given to patients who have open-heart surgery and organ
               transplants. Plasma transfusions are used for patients with liver
-              failure, bad infections, and serious burns. “Whole blood” is
+              failure, bad infections, and serious burns. âWhole bloodâ is
               usually given to people who have life-threatening injuries or
               people in surgery.
             </p>
@@ -169,8 +174,8 @@
               </h1>
               <h1 class="hands_text">
                 <a href="#"
-                  >Don't be “A negative”; <br />
-                  be “O positive”.</a
+                  >Don't be âA negativeâ; <br />
+                  be âO positiveâ.</a
                 >
               </h1>
             </div>
@@ -187,7 +192,7 @@
       <div class="container">
         <form action="/action_page.php">
           <div class="subscribe_bt">
-            <a href="donorform.html">Donor Form</a>
+            <a href="/donorform">Donor Form</a>
           </div>
         </form>
       </div>
@@ -202,21 +207,38 @@
               <h2 class="useful_text">Resources</h2>
               <div class="footer_menu">
                 <ul>
-                  <li><a href="#">What we do</a></li>
-                  <li><a href="#">Media</a></li>
-                  <li><a href="#">Travel Advice</a></li>
-                  <li><a href="#">Protection</a></li>
-                  <li><a href="#">Care</a></li>
+                  <li>
+                    <a href="http://nbtc.naco.gov.in/page/donationprocess/"
+                      >Donation process</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=p5EBrAbVs04"
+                      >Media</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.who.int/news-room/fact-sheets/detail/blood-safety-and-availability#:~:text=WHO%20recommends%20that%20all%20blood,according%20to%20quality%20system%20requirements."
+                      >Protection</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.redcrossblood.org/donate-blood/blood-donation-process/before-during-after.html"
+                      >Care</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
               <h2 class="useful_text">About</h2>
               <p class="footer_text">
-                Many desktop publishing packages and web page editors now use
-                Lorem Ipsum as their default model text, and a search for 'lorem
-                ipsum' will uncover many web sites still in their infancy.
-                Various
+                Blood donation is not just a sacred service to patients in dire
+                need of blood but also brings health benefits to the donor. Your
+                blood donation can be used whole, for platelets, red blood
+                cells, plasma, etc.
               </p>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -259,7 +281,7 @@
         <div class="row">
           <div class="col-sm-12">
             <p class="copyright_text">
-              © 2020 All Rights Reserved.<a href="https://html.design">
+              Â© 2020 All Rights Reserved.<a href="https://html.design">
                 Life Saver</a
               >
             </p>
